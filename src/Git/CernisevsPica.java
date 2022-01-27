@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class CernisevsPica {
 	static Scanner dati=new Scanner(System.in);
+	static double cena = 0;
 public static void piedevas() {
 	int cik;
 	String izvele;
@@ -22,10 +23,25 @@ public static void piedevas() {
 		
 	}
        System.out.println();
+       cena = cena + 1.20*cik;
 	
 	
-	
-	
+}
+public static void merce() {
+	String izvele;
+	System.out.println("Izvelies kâdu mçrci vçlçtos lai ir picai (Tomâtu, majonçze, bârbekju)");
+	izvele = dati.next();
+	if(izvele=="Tomâtu") {
+		System.out.println("Tu izvçlçjies"+izvele+" mçrci");
+	}else if(izvele=="majonçze") {
+		System.out.println("Tu izvçlçjies"+izvele);
+		
+	}else if(izvele == "barbekjû") {
+		System.out.println("Tu izvçlçjies"+izvele+" mçrci");
+	}else {
+		System.out.println("Tâdas mçrces nav");
+	}
+	cena = cena + 0.50;
 }
 	
 	public static void main(String[] args) {
@@ -33,7 +49,7 @@ public static void piedevas() {
 		
 		int skaits, lielums, piegade;
 		int toping;
-		double cena = 0;
+		
 		String izvele;
 			
 		System.out.println("Vai bus nepiecieðams piegâdât(1-jâ, 2-nç)");
@@ -70,12 +86,12 @@ public static void piedevas() {
 			
 			
 			case "2":
+				merce();
 				break;
 				
 				
 			}
 		}while(izvele.equals("beigt"));
-		
 		
 		
 	
