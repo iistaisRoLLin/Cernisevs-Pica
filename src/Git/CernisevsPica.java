@@ -72,11 +72,24 @@ public static void merce() {
 			System.out.println("Picas ar tâdu lielumu nepastâv.");
 	
 		}
+		int alergija;
+		int veids;
+		System.out.println("Vai tev ir kâdas alergijas (1 - Jâ | 2 - Nç");
+		alergija = dati.nextInt();
+		if(alergija == 1) {
+			System.out.println("Pret ko jums ir alergija? (1. Pret pienu produktiem, laktoze | 2. Pret lipekïiem jeb rudziem, kvieðiem utt");
+			veids = dati.nextInt();
+			if(veids == 1) {
+				System.out.println("Pica netiks izmantoti tieði pienu produkti");
+			}else if(veids == 2) {
+				System.out.println("Pica netiks veidota no rudzu kvieðu u.c kuri satur lipekli,  miltiem");
+			}
+		}
 		
 		
 		do {
 			System.out.println("Izvelies ko vçlies darît | 1 - Pievienot picai kaut ko klât | 2. Izvçlçties kâda mçrce bûs picai |"
-					+ " 3.  ");
+					+ " beigt = apstadinat programmu  ");
 			izvele = dati.next();
 			izvele = izvele.toLowerCase();
 			switch(izvele) {
