@@ -20,7 +20,7 @@ public static void piedevas() {
 	for(int i=0; i<iegutais.length; i++) {
 		System.out.println("Ko vçlies pievienot?");
 		iegutais[i] = dati.next();
-		System.out.print(iegutais[i]+" ");
+		System.out.print(iegutais[i]+1+" ");
 		iegutais2 = iegutais;
 		
 		
@@ -65,12 +65,12 @@ public static void merce() {
 		System.out.println("Kâda izmçra picu vçlaties? 30, 40 vai 50 cm?");
 		lielums = dati.nextInt();
 		if(lielums==30) {
-			cena = cena + 3.50;
+			cena = cena + 3.50+ 0.30;
 			
-		}else if(lielums == 30) {
-			cena = cena + 5.00;
+		}else if(lielums == 40) {
+			cena = cena + 5.00 + 0.40;
 		}else if(lielums == 50) {
-			cena = cena + 7.50;
+			cena = cena + 7.50+0.50;
 		}else {
 			System.out.println("Picas ar tâdu lielumu nepastâv.");
 	
@@ -86,6 +86,8 @@ public static void merce() {
 				System.out.println("Pica netiks izmantoti tieði pienu produkti");
 			}else if(veids == 2) {
 				System.out.println("Pica netiks veidota no rudzu kvieðu u.c kuri satur lipekli,  miltiem");
+			}else {
+				System.out.println("Alergiju nav");
 			}
 		}
 		
@@ -109,7 +111,7 @@ public static void merce() {
 			}
 		}while(izvele.equals("beigt"));
 		
-		System.out.println("Persona izvelejas "+lielums+"   lielu pica ar "+kopizvel+" mçrci, uz kuras ir "+iegutais2+". Ðis viss izmaksâs "+cena+" euro");
+		System.out.println("Persona izvelejas "+lielums+"   lielu pica ar "+kopizvel+" mçrci, uz kuras ir "+iegutais2+". Ðis viss izmaksâs "+cena+" Euro");
 	
 	}
 }
