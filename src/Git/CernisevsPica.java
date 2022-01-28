@@ -9,6 +9,8 @@ import java.util.Scanner;
 public class CernisevsPica {
 	static Scanner dati=new Scanner(System.in);
 	static double cena = 0;
+	static String[] iegutais2;
+	static String kopizvel;
 public static void piedevas() {
 	int cik;
 	String izvele;
@@ -19,6 +21,8 @@ public static void piedevas() {
 		System.out.println("Ko vçlies pievienot?");
 		iegutais[i] = dati.next();
 		System.out.print(iegutais[i]+" ");
+		iegutais2 = iegutais;
+		
 		
 		
 	}
@@ -33,8 +37,6 @@ public static void merce() {
 	izvele = dati.next();
 	if(izvele=="Tomâtu") {
 		System.out.println("Tu izvçlçjies"+izvele+" mçrci");
-	}else if(izvele=="majonçze") {
-		System.out.println("Tu izvçlçjies"+izvele);
 		
 	}else if(izvele == "barbekjû") {
 		System.out.println("Tu izvçlçjies"+izvele+" mçrci");
@@ -42,6 +44,7 @@ public static void merce() {
 		System.out.println("Tâdas mçrces nav");
 	}
 	cena = cena + 0.50;
+	izvele = kopizvel;
 }
 	
 	public static void main(String[] args) {
@@ -106,7 +109,7 @@ public static void merce() {
 			}
 		}while(izvele.equals("beigt"));
 		
-		
+		System.out.println("Persona izvelejas "+lielums+"   lielu pica ar "+kopizvel+" mçrci, uz kuras ir "+iegutais2+". Ðis viss izmaksâs "+cena+" euro");
 	
 	}
 }
