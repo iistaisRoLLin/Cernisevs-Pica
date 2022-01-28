@@ -111,7 +111,7 @@ public static void merce() {
 			}
 		}while(izvele.equals("beigt"));
 		
-		System.out.println("Persona izvelejas "+lielums+"   lielu pica ar "+kopizvel+" mçrci, uz kuras ir "+iegutais2+". Ðis viss izmaksâs "+cena+" Euro");
+		System.out.println("Persona izvelejas "+lielums+"   lielu pica ar "+kopizvel+" mçrci, uz kuras ir "+iegutais2+". Ðis viss izmaksâs "+cena+" Eiro");
 	
 	}
 }
