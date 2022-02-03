@@ -11,6 +11,7 @@ public class CernisevsPica {
 	static double cena = 0;
 	static String[] iegutais2;
 	static String kopizvel;
+	String dzeriens;
 public static void piedevas() {
 	int cik;
 	String izvele;
@@ -111,7 +112,7 @@ public static void merce() {
 			}
 		}while(izvele.equals("beigt"));
 		
-		System.out.println("Persona izvelejas "+lielums+"   lielu pica ar "+kopizvel+" mçrci, uz kuras ir "+iegutais2+". Ðis viss izmaksâs "+cena+" Eiro");
+		System.out.println("Persona izvelejas "+lielums+"   lielu pica ar "+kopizvel+" mçrci, uz kuras ir "+iegutais2+". Tu kâ dzçrienu izvçlçjies Ðis viss izmaksâs "+cena+" Eiro");
 	
 	}
 }
